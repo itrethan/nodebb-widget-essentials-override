@@ -23,7 +23,6 @@
 	};
 
 	Widget.init = function(params, callback) {
-		console.log("Loaded node-widget-essentials-override plugin.");
 		callback();
 	};
 
