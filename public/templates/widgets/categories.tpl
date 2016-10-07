@@ -6,7 +6,8 @@
 		<!-- ELSE -->
 		<h4><a href="{categories.link}">{categories.name}</a></h4>
 		<!-- ENDIF !categories.link -->
-		<p>{categories.descriptionParsed} test test</p>
+		<p>{categories.descriptionParsed}</p>
 	</li>
 </ul>
+<span>test</span>
 <!-- END categories -->
