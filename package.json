@@ -1,15 +1,67 @@
 {
-  "name": "nodebb-widget-essentials-override",
-  "version": "2.0.11",
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/itrethan/nodebb-widget-essentials-override.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/itrethan/nodebb-widget-essentials-override.git",
+        "spec": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:itrethan/nodebb-widget-essentials-override.git",
+          "sshUrl": "git+ssh://git@github.com/itrethan/nodebb-widget-essentials-override.git",
+          "httpsUrl": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git",
+          "gitUrl": "git://github.com/itrethan/nodebb-widget-essentials-override.git",
+          "shortcut": "github:itrethan/nodebb-widget-essentials-override",
+          "directUrl": "https://raw.githubusercontent.com/itrethan/nodebb-widget-essentials-override/master/package.json"
+        }
+      },
+      "/home/ethanwu/workspace/nodebb"
+    ]
+  ],
+  "_from": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git",
+  "_id": "nodebb-widget-essentials-override@2.0.11",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/nodebb-widget-essentials-override",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/itrethan/nodebb-widget-essentials-override.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/itrethan/nodebb-widget-essentials-override.git",
+    "spec": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:itrethan/nodebb-widget-essentials-override.git",
+      "sshUrl": "git+ssh://git@github.com/itrethan/nodebb-widget-essentials-override.git",
+      "httpsUrl": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git",
+      "gitUrl": "git://github.com/itrethan/nodebb-widget-essentials-override.git",
+      "shortcut": "github:itrethan/nodebb-widget-essentials-override",
+      "directUrl": "https://raw.githubusercontent.com/itrethan/nodebb-widget-essentials-override/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git#e4708cbae0f9c1b3564b13d33e08786ee4dae227",
+  "_shasum": "424fbd5d7e1c70876598aca01ed806386d0e6672",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/itrethan/nodebb-widget-essentials-override.git",
+  "_where": "/home/ethanwu/workspace/nodebb",
+  "bugs": {
+    "url": "https://github.com/itrethan/nodebb-widget-essentials-override/issues"
+  },
+  "dependencies": {},
   "description": "NodeBB Essential Widgets",
-  "main": "library.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/itrethan/nodebb-widget-essentials-override"
-  },
+  "devDependencies": {},
+  "gitHead": "e4708cbae0f9c1b3564b13d33e08786ee4dae227",
+  "homepage": "https://github.com/itrethan/nodebb-widget-essentials-override#readme",
   "keywords": [
     "nodebb",
     "widget",
@@ -18,14 +70,20 @@
     "text"
   ],
   "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/itrethan/nodebb-widget-essentials-override/issues"
-  },
-  "readme": "",
-  "readmeFilename": "README.md",
-  "_id": "nodebb-widget-essentials-override@0.0.1",
-  "_from": "nodebb-widget-essentials-override@~0.0.1",
+  "main": "library.js",
+  "name": "nodebb-widget-essentials-override",
   "nbbpm": {
     "compatibility": "^1.0.1"
-  }
+  },
+  "optionalDependencies": {},
+  "readme": "# NodeBB Essential Widgets\n\nSeveral basic widgets bundled together in one package including 'HTML', 'Markdown', 'Active Users', 'Moderators', 'Forum Stats', 'Recent Topics', 'Categories', 'Popular Tags' and 'Recent Posts' widgets.\n\n## Installation\n\n    npm install nodebb-widget-essentials\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itrethan/nodebb-widget-essentials-override.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.11"
 }

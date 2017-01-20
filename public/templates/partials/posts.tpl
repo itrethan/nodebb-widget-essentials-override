@@ -9,8 +9,7 @@
 		<!-- ENDIF posts.user.picture -->
 	</a>
 	<div>
-		{posts.content}
-		<p class="fade-out"></p>
+		<a href="{config.relative_path}/topic/{posts.topic.slug}">{posts.topic.title}</a>
 	</div>
 	<span class="pull-right post-preview-footer">
 		<span class="timeago" title="{posts.timestampISO}"></span> &bull;

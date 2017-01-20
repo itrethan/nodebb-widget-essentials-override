@@ -1,12 +1,3 @@
 <!-- BEGIN categories -->
-<ul class="categories-list">
-	<li>
-		<!-- IF !categories.link -->
-		<h4><a href="{relative_path}/category/{categories.slug}">{categories.name}</a></h4>
-		<!-- ELSE -->
-		<h4><a href="{categories.link}">{categories.name}</a></h4>
-		<!-- ENDIF !categories.link -->
-		<p>{categories.descriptionParsed} test test</p>
-	</li>
-</ul>
+<a href="{relative_path}/category/{categories.slug}" class="list-group-item">{categories.name}</a>
 <!-- END categories -->

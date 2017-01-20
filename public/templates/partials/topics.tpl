@@ -8,9 +8,9 @@
 		<!-- ENDIF topics.user.picture -->
 	</a>
 
-	<p>
+	<div>
 		<a href="{relative_path}/topic/{topics.slug}">{topics.title}</a>
-	</p>
+	</div>
 	<span class="pull-right post-preview-footer">
 		<span class="timeago" title="{topics.lastposttimeISO}"></span>
 	</span>

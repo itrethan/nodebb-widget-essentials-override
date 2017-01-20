@@ -7,6 +7,12 @@
 	"hooks": [
 		{
 			"hook": "static:app.load", "method": "init"
+		},
+		{
+			"hook": "filter:widgets.getWidgets", "method": "defineWidgets"
+		},
+		{
+			"hook": "filter:widget.render:headline", "method": "renderHeadlineWidget"
 		}
 	],
 	"templates": "./public/templates",

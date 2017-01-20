@@ -23,10 +23,52 @@
 	};
 
 	Widget.init = function(params, callback) {
-		console.log("Loaded node-widget-essentials-override plugin.");
+		app = params.app;
 		callback();
 	};
 
+	Widget.defineWidgets = function(widgets, callback) {
+		async.waterfall([
+			function(next) {
+				async.map([
+					{
+						widget: "headline",
+						name: "Headline",
+						description: "Topic headline for the bbs",
+						content: 'admin/headline'
+					}
+				], function(widget, next) {
+					app.render(widget.content, {}, function(err, html) {
+						widget.content = html;
+						next(err, widget);
+					});
+				}, function(err, _widgets) {
+					widgets = widgets.concat(_widgets);
+					next(err, widgets);
+				});
+			}
+		], callback);
+	}
+
+	Widget.renderHeadlineWidget = function(widget, callback) {
+		var tid = widget.data.tid;
+		topics.getTopicData (tid, function(err, data) {
+			if (err) {
+					return callback(err);
+			}
+
+			posts.getPostData(data.mainPid, function(err, postData) {
+				if (err) {
+					return callback(err);
+				}
+				data.mainPost = postData;
+				app.render('widgets/headline', {
+					topic: data,
+					relative_path: nconf.get('relative_path')
+				}, callback);
+			});
+		})
+	}
 
 	module.exports = Widget;
 }(module));
